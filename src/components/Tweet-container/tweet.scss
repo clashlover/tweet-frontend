@@ -1,0 +1,17 @@
+.tweet-container {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  border: 1px solid black;
+  margin: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+
+.tweet-button-container {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  button {
+    margin: 0.2rem 0;
+  }
+}
