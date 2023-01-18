@@ -2,7 +2,7 @@ import React from "react";
 
 const Tweet = ({ tweet }) => {
   const handleDelete = () => {
-    fetch("http://localhost:5000/", {
+    fetch("http://localhost:5000/delete", {
       method: "delete",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -10,7 +10,7 @@ const Tweet = ({ tweet }) => {
       }),
     })
       .then((res) => res.json())
-      .then((output) => alert(output))
+      .then((output) => console.log(output))
       .catch((err) => console.log(err));
   };
   return (
